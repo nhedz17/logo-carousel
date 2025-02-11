@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container { width: 100%; max-width: 600px; margin: auto; overflow: hidden; }
+        .swiper-slide img { width: 100px; height: auto; display: block; margin: auto; }
+    </style>
+</head>
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1gG67oo6iOpemEB1QE8WvfMRq5RHyYCI8=w1000" alt="Basco"></div>
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1LID8Pto3uMv5Aq3gnvc8e4t5szkvveAw=w1000" alt="Uyugan"></div>
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1LKMn701V0CrEm1c1UBJDfYUd0k2TXlhD=w1000" alt="Mahatao"></div>
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1XZzeh4H0nr6k661aNUlBc36-VzQokYm4=w1000" alt="Ivana"></div>
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1yfj-KHWABdd0F0lo6cut7GVv7zIZ_kij=w1000" alt="Sabtang"></div>
+            <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/d/1nu4T1xfbGln3xPzsdfnE2Iry6O4ixsMN=w1000" alt="Itbayat"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 2000 },
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: { el: '.swiper-pagination', clickable: true }
+        });
+    </script>
+
+</body>
+</html>
